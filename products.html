@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products | Jai Hind Vacuum Pump</title>
+    <meta name="description" content="Explore our complete range of industrial vacuum pumps and systems for all applications">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* ====== Base Styles ====== */
+        :root {
+            --primary-color: #0056b3;
+            --secondary-color: #003366;
+            --accent-color: #ff6b00;
+            --text-color: #333;
+            --light-color: #f8f9fa;
+            --dark-color: #212529;
+            --white: #fff;
+            --gray: #6c757d;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: var(--transition);
+            cursor: pointer;
+        }
+
+        .primary-btn {
+            background-color: var(--primary-color);
+            color: var(--white);
+            border: 2px solid var(--primary-color);
+        }
+
+        .primary-btn:hover {
+            background-color: transparent;
+            color: var(--primary-color);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title {
+            font-size: 2.2rem;
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+        }
+
+        .divider {
+            width: 80px;
+            height: 3px;
+            background-color: var(--accent-color);
+            margin: 0 auto;
+        }
+
+        /* ====== Top Bar ====== */
+        .top-bar {
+            background-color: var(--secondary-color);
+            color: var(--white);
+            padding: 8px 0;
+            font-size: 14px;
+        }
+
+        .top-bar-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .contact-info a, .social-links a {
+            color: var(--white);
+            text-decoration: none;
+            margin-right: 15px;
+            transition: var(--transition);
+        }
+
+        .contact-info a:hover, .social-links a:hover {
+            color: var(--accent-color);
+        }
+
+        .social-links a {
+            margin-right: 10px;
+            font-size: 16px;
+        }
+
+        /* ====== Header & Navigation ====== */
+        .header {
+            background-color: var(--white);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 15px 0;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            height: auto;
+            max-width: 100%;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-item {
+            position: relative;
+            margin: 0 10px;
+        }
+
+        .nav-link {
+            color: var(--dark-color);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 10px 0;
+            position: relative;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            color: var(--primary-color);
+        }
+
+        .nav-link.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: var(--primary-color);
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: var(--white);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            padding: 10px 0;
+            min-width: 200px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: var(--transition);
+            z-index: 100;
+            list-style: none;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .dropdown-menu li {
+            padding: 0;
+        }
+
+        .dropdown-menu a {
+            padding: 10px 20px;
+            display: block;
+            color: var(--dark-color);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .dropdown-menu a:hover {
+            background-color: var(--light-color);
+            color: var(--primary-color);
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            background-color: var(--dark-color);
+            transition: var(--transition);
+        }
+
+        /* ====== Products Hero ====== */
+        .products-hero {
+            background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.8)), url('images/products-bg.jpg') center/cover no-repeat;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .products-hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+        }
+
+        .products-hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+
+        /* ====== Products Grid ====== */
+        .products-section {
+            padding: 80px 0;
+            background-color: #f9f9f9;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .product-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-image {
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .product-card:hover .product-image img {
+            transform: scale(1.05);
+        }
+
+        .product-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            z-index: 2;
+        }
+
+        .ribbon {
+            width: 150px;
+            height: 150px;
+            overflow: hidden;
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            z-index: 1;
+        }
+        
+        .ribbon::before,
+        .ribbon::after {
+            position: absolute;
+            z-index: -1;
+            content: '';
+            display: block;
+            border: 5px solid #c23a22;
+            border-top-color: transparent;
+            border-right-color: transparent;
+        }
+        
+        .ribbon::before {
+            top: 0;
+            left: 0;
+        }
+        
+        .ribbon::after {
+            bottom: 0;
+            right: 0;
+        }
+        
+        .ribbon span {
+            position: absolute;
+            display: block;
+            width: 225px;
+            padding: 8px 0;
+            background-color: var(--accent-color);
+            box-shadow: 0 5px 10px rgba(0,0,0,.1);
+            color: #fff;
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-shadow: 0 1px 1px rgba(0,0,0,.2);
+            text-transform: uppercase;
+            text-align: center;
+            right: -25px;
+            top: 30px;
+            transform: rotate(45deg);
+        }
+
+        .product-content {
+            padding: 25px;
+        }
+
+        .product-content h3 {
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        .product-features {
+            margin: 20px 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .product-features li {
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .product-features i {
+            color: var(--accent-color);
+            margin-right: 8px;
+            font-size: 1rem;
+            margin-top: 2px;
+        }
+
+        .product-cta {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .outline-btn {
+            background-color: transparent;
+            color: var(--primary-color);
+            border: 2px solid var(--primary-color);
+        }
+
+        .outline-btn:hover {
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+
+        /* ====== Footer ====== */
+        .footer {
+    background-color: var(--secondary-color);
+    color: #d9d9d9;
+    position: relative;
+}
+
+.footer-top {
+    padding: 70px 0 40px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.footer-col {
+    margin-bottom: 30px;
+}
+
+.footer-logo img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.footer-about {
+    margin-bottom: 20px;
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.footer-social a {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: var(--transition);
+}
+
+.footer-social a:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-3px);
+}
+
+.footer-title {
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 2px;
+    background-color: var(--accent-color);
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: #d9d9d9;
+    text-decoration: none;
+    transition: var(--transition);
+    display: inline-block;
+    position: relative;
+    padding-left: 15px;
+}
+
+.footer-links a::before {
+    content: '\f054';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 0.7rem;
+    position: absolute;
+    left: 0;
+    top: 6px;
+    color: var(--accent-color);
+    transition: var(--transition);
+    opacity: 0;
+}
+
+.footer-links a:hover {
+    color: white;
+    padding-left: 20px;
+}
+
+.footer-links a:hover::before {
+    opacity: 1;
+    left: 5px;
+}
+
+.footer-contact {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-contact li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    line-height: 1.6;
+}
+
+.footer-contact i {
+    color: var(--accent-color);
+    margin-top: 4px;
+    font-size: 1rem;
+}
+
+.footer-contact a {
+    color: #d9d9d9;
+    transition: var(--transition);
+    text-decoration: none;
+}
+
+.footer-contact a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+@media (min-width: 768px) {
+    .footer-bottom-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.copyright {
+    font-size: 0.9rem;
+    margin-left: 5rem;
+}
+
+.footer-legal {
+    display: flex;
+    gap: 15px;
+    font-size: 0.9rem;
+    margin-right: 5rem;
+}
+
+.footer-legal a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: var(--transition);
+    font-weight: 1000;
+}
+
+.footer-legal a:hover {
+    color: whitesmoke;
+}
+
+/* Back to Top Button */
+#back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+    z-index: 999;
+}
+
+#back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+#back-to-top:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .footer-top {
+        padding: 50px 0 30px;
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .copyright{
+        margin-right: 5rem;
+    }
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-legal {
+        flex-direction: column;
+        gap: 5px;
+        margin-left: 5rem;
+    }
+}
+
+/* Footer Map Layout */
+.footer-col-wide {
+    grid-column: span 2;
+}
+
+.footer-contact-map {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    height: 100%;
+}
+
+.footer-contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-map {
+    height: 250px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .footer-col-wide {
+        grid-column: span 1;
+    }
+    
+    .footer-contact-map {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-map {
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-contact-map {
+        gap: 20px;
+    }
+}
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="contact-info">
+                    <a href="tel:+919876543210"><i class="fas fa-phone"></i> +91 98765 43210</a>
+                    <a href="mailto:info@jaihindvacuumpump.co.in"><i class="fas fa-envelope"></i> info@jaihindvacuumpump.co.in</a>
+                </div>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Jai Hind Vacuum Pump" width="180">
+                    </a>
+                </div>
+                
+                <nav class="navbar">
+                    <ul class="nav-menu">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a href="products.html" class="nav-link active">Products <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="rotary-vane-pumps.html" class="active">Rotary Vane Pumps</a></li>
+                                <li><a href="liquid-ring-pumps.html">Liquid Ring Pumps</a></li>
+                                <li><a href="roots-blowers.html">Roots Blowers</a></li>
+                                <li><a href="vacuum-systems.html">Vacuum Systems</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="industries.html" class="nav-link">Industries</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                    
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </nav>
+                
+                <div class="header-cta">
+                    <a href="index.html#contact" class="btn primary-btn">Get a Quote</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Products Hero Section -->
+    <section class="products-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Our Premium Vacuum Solutions</h1>
+                <p>Engineered for performance, built for durability - explore our complete range of industrial vacuum technology</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid Section -->
+    <section class="products-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Complete Product Range</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/rotary-vane-pump.jpg" alt="Rotary Vane Vacuum Pump">
+                        <div class="ribbon">
+                            <span>Best Seller</span>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3>Rotary Vane Pumps</h3>
+                        <ul class="product-features">
+                            <li><i class="fas fa-check-circle"></i> Capacity: 4 m³/h to 1,600 m³/h</li>
+                            <li><i class="fas fa-check-circle"></i> Ultimate vacuum: 0.05 mbar</li>
+                            <li><i class="fas fa-check-circle"></i> Oil-sealed operation</li>
+                        </ul>
+                        <div class="product-cta">
+                            <a href="rotary-vane-pumps.html" class="btn outline-btn">View Details</a>
+                            <a href="index.html#contact" class="btn primary-btn">Enquire Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/liquid-ring-pump.jpg" alt="Liquid Ring Vacuum Pump">
+                        <div class="ribbon">
+                            <span>Popular</span>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3>Liquid Ring Pumps</h3>
+                        <ul class="product-features">
+                            <li><i class="fas fa-check-circle"></i> Capacity: 25 m³/h to 30,000 m³/h</li>
+                            <li><i class="fas fa-check-circle"></i> Ultimate vacuum: 30 mbar</li>
+                            <li><i class="fas fa-check-circle"></i> Water or oil sealed</li>
+                        </ul>
+                        <div class="product-cta">
+                            <a href="liquid-ring-pumps.html" class="btn outline-btn">View Details</a>
+                            <a href="index.html#contact" class="btn primary-btn">Enquire Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/roots-blower.jpg" alt="Roots Blower">
+                        <div class="ribbon">
+                            <span>Energy Efficient</span>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3>Roots Blowers</h3>
+                        <ul class="product-features">
+                            <li><i class="fas fa-check-circle"></i> Capacity: 200 m³/h to 50,000 m³/h</li>
+                            <li><i class="fas fa-check-circle"></i> Pressure range: 0.01 to 1,000 mbar</li>
+                            <li><i class="fas fa-check-circle"></i> Oil-free operation</li>
+                        </ul>
+                        <div class="product-cta">
+                            <a href="roots-blowers.html" class="btn outline-btn">View Details</a>
+                            <a href="index.html#contact" class="btn primary-btn">Enquire Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/vacuum-system.jpg" alt="Complete Vacuum System">
+                        <div class="ribbon">
+                            <span>Custom</span>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3>Vacuum Systems</h3>
+                        <ul class="product-features">
+                            <li><i class="fas fa-check-circle"></i> Fully integrated systems</li>
+                            <li><i class="fas fa-check-circle"></i> PLC controlled operation</li>
+                            <li><i class="fas fa-check-circle"></i> Remote monitoring options</li>
+                        </ul>
+                        <div class="product-cta">
+                            <a href="vacuum-systems.html" class="btn outline-btn">View Details</a>
+                            <a href="index.html#contact" class="btn primary-btn">Enquire Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/oil-sealed-pump.jpg" alt="Oil Sealed Vacuum Pump">
+                    </div>
+                    <div class="product-content">
+                        <h3>Oil Sealed Pumps</h3>
+                        <ul class="product-features">
+                            <li><i class="fas fa-check-circle"></i> Capacity: 10 m³/h to 500 m³/h</li>
+                            <li><i class="fas fa-check-circle"></i> Ultimate vacuum: 0.1 mbar</li>
+                            <li><i class="fas fa-check-circle"></i> Low maintenance design</li>
+                        </ul>
+                        <div class="product-cta">
+                            <a href="oil-sealed-pumps.html" class="btn outline-btn">View Details</a>
+                            <a href="index.html#contact" class="btn primary-btn">Enquire Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/products/dry-pump.jpg" alt="Dry Vacuum Pump">
+                        <div class="ribbon">
+                            <span>New</span>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3>Dry Vacuum Pumps</h3>
+                        <ul class="product-features">
+                            <li><i class="fas fa-check-circle"></i> Capacity: 5 m³/h to 1,200 m³/h</li>
+                            <li><i class="fas fa-check-circle"></i> Oil-free operation</li>
+                            <li><i class="fas fa-check-circle"></i> Contamination-free pumping</li>
+                        </ul>
+                        <div class="product-cta">
+                            <a href="dry-pumps.html" class="btn outline-btn">View Details</a>
+                            <a href="index.html#contact" class="btn primary-btn">Enquire Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+<footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <!-- Company Info -->
+                    <div class="footer-col">
+                        <div class="footer-logo">
+                            <img src="/images/logo.jpg" alt="Jai Hind Vacuum Pump" width="180">
+                        </div>
+                        <p class="footer-about">Jai Hind Vacuum Pump is a leading manufacturer of industrial vacuum
+                            solutions with over 25 years of experience in the industry.</p>
+                        <div class="footer-social">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="footer-col">
+                        <h3 class="footer-title">Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="industries.html">Industries</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Info with Map -->
+                    <div class="footer-col footer-col-wide">
+                        <div class="footer-contact-map">
+                            <!-- Contact Info -->
+                            <div class="footer-contact-info">
+                                <h3 class="footer-title">Contact Us</h3>
+                                <ul class="footer-contact">
+                                    <li>
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span>123 Industrial Area, Phase II, Mumbai, Maharashtra 400001</span>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-phone-alt"></i>
+                                        <span>
+                                            <a href="tel:+912212345678">+91 22 1234 5678</a>,
+                                            <a href="tel:+919876543210">+91 98765 43210</a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-envelope"></i>
+                                        <span>
+                                            <a
+                                                href="mailto:info@jaihindvacuumpump.co.in">info@jaihindvacuumpump.co.in</a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-clock"></i>
+                                        <span>Mon-Sat: 9:00 AM - 6:00 PM</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Map -->
+                            <div class="footer-map">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.715314090407!2d72.8382143153846!3d19.03398725872682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce6e593e7c15%3A0x6a7b11f2a0a7a5a5!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
+                                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                    aria-label="Our Location on Google Maps"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <div class="copyright">
+                        &copy; <span id="current-year"></span> Jai Hind Vacuum Pump. All Rights Reserved.
+                    </div>
+                    <div class="footer-legal">
+                        <p> Develped and Managed by <a href="privacy-policy.html">CRYPTIVOXE</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Back to Top Button -->
+        <button id="back-to-top" aria-label="Back to top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile Menu Toggle
+            const hamburger = document.querySelector('.hamburger');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            hamburger.addEventListener('click', function() {
+                this.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+            
+            // Dropdown Menu Toggle for Mobile
+            const dropdowns = document.querySelectorAll('.dropdown');
+            
+            dropdowns.forEach(dropdown => {
+                const link = dropdown.querySelector('.nav-link');
+                const menu = dropdown.querySelector('.dropdown-menu');
+                
+                link.addEventListener('click', function(e) {
+                    if (window.innerWidth <= 992) {
+                        e.preventDefault();
+                        menu.classList.toggle('active');
+                        
+                        // Close other dropdowns when one is opened
+                        dropdowns.forEach(otherDropdown => {
+                            if (otherDropdown !== dropdown) {
+                                otherDropdown.querySelector('.dropdown-menu').classList.remove('active');
+                            }
+                        });
+                    }
+                });
+            });
+            
+            // Close menu when clicking outside on mobile
+            document.addEventListener('click', function(e) {
+                if (window.innerWidth <= 992) {
+                    if (!e.target.closest('.navbar') && !e.target.closest('.hamburger')) {
+                        navMenu.classList.remove('active');
+                        hamburger.classList.remove('active');
+                        document.querySelectorAll('.dropdown-menu').forEach(menu => {
+                            menu.classList.remove('active');
+                        });
+                    }
+                }
+            });
+            
+            // Back to Top Button
+            const backToTopButton = document.getElementById('back-to-top');
+            
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) {
+                    backToTopButton.classList.add('visible');
+                } else {
+                    backToTopButton.classList.remove('visible');
+                }
+            });
+            
+            backToTopButton.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+            
+            // Update copyright year
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+            
+            // Product card hover effects
+            const productCards = document.querySelectorAll('.product-card');
+            productCards.forEach(card => {
+                const img = card.querySelector('.product-image img');
+                
+                card.addEventListener('mousemove', (e) => {
+                    if (window.innerWidth > 768) {
+                        const x = e.offsetX;
+                        const y = e.offsetY;
+                        const centerX = card.offsetWidth / 2;
+                        const centerY = card.offsetHeight / 2;
+                        
+                        const angleX = (y - centerY) / 20;
+                        const angleY = (centerX - x) / 20;
+                        
+                        img.style.transform = `perspective(1000px) rotateX(${angleX}deg) rotateY(${angleY}deg) scale(1.05)`;
+                    }
+                });
+                
+                card.addEventListener('mouseleave', () => {
+                    img.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale(1)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
