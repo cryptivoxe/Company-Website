@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="About Jai Hind Vacuum Pump - Leading manufacturer of industrial vacuum pumps and systems. Our history, quality standards, and manufacturing expertise.">
+    <meta name="keywords"
+        content="Jai Hind Vacuum Pump, about us, vacuum pump manufacturer, industrial pumps, vacuum technology">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>About Jai Hind Vacuum Pump | Industrial Vacuum Solutions</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <style>
+        /* CSS Variables */
+        :root {
+            --primary-color: #0056b3;
+            --secondary: #ff6b00;
+            --secondary-color: #003366;
+            --dark: #222;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+            --accent-color: #ff6b00;
+            --text-color: #333;
+            --light-color: #f8f9fa;
+            --dark-color: #212529;
+            --white: #fff;
+            --transition: all 0.3s ease;
+        }
+
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--dark);
+            overflow-x: hidden;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: var(--primary-color);
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        /* Header Styles */
+        .header {
+            background-color: var(--white);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 15px 0;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            height: auto;
+            max-width: 100%;
+        }
+
+        /* Navigation Styles */
+        .navbar {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-item {
+            position: relative;
+            margin: 0 10px;
+        }
+
+        .nav-link {
+            color: var(--dark-color);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 10px 0;
+            position: relative;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--primary-color);
+        }
+
+        .nav-link.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: var(--primary-color);
+        }
+
+        /* Dropdown Menu Styles */
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: var(--white);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            padding: 10px 0;
+            min-width: 300px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: var(--transition);
+            z-index: 100;
+            list-style: none;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .dropdown-menu li {
+            padding: 0;
+        }
+
+        .dropdown-menu a {
+            padding: 10px 20px;
+            display: block;
+            color: var(--dark-color);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .dropdown-menu a:hover {
+            background-color: var(--light-color);
+            color: var(--primary-color);
+        }
+
+        /* Button Styles */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: var(--transition);
+            cursor: pointer;
+        }
+
+        .primary-btn {
+            background-color: var(--primary-color);
+            color: var(--white);
+            border: 2px solid var(--primary-color);
+        }
+
+        .primary-btn:hover {
+            background-color: transparent;
+            color: var(--primary-color);
+        }
+
+        /* Hamburger Menu */
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            background-color: var(--dark-color);
+            transition: var(--transition);
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .header-content {
+                position: relative;
+            }
+
+            .nav-menu {
+                position: fixed;
+                top: 90px;
+                left: -100%;
+                flex-direction: column;
+                background-color: var(--white);
+                width: 100%;
+                padding: 20px;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+                transition: var(--transition);
+                z-index: 999;
+            }
+
+            .nav-menu.active {
+                left: 0;
+            }
+
+            .nav-item {
+                margin: 10px 0;
+            }
+
+            .dropdown-menu {
+                position: static;
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0);
+                box-shadow: none;
+                padding: 0;
+                margin-top: 10px;
+                display: none;
+            }
+
+            .dropdown-menu.active {
+                display: block;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            .hamburger.active .bar:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
+
+            .hamburger.active .bar:nth-child(2) {
+                opacity: 0;
+            }
+
+            .hamburger.active .bar:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+            }
+
+            .header-cta {
+                margin-left: auto;
+                margin-right: 15px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .top-bar-content {
+                flex-direction: column;
+                gap: 8px;
+            }
+
+            .contact-info,
+            .social-links {
+                width: 100%;
+                text-align: center;
+            }
+
+            .header-content {
+                flex-wrap: wrap;
+            }
+
+            .logo {
+                order: 1;
+            }
+
+            .hamburger {
+                order: 2;
+            }
+
+            .header-cta {
+                order: 3;
+                width: 100%;
+                margin: 15px 0 0;
+                text-align: center;
+            }
+
+            .nav-menu {
+                top: 150px;
+            }
+        }
+
+
+        /* Header Styles */
+        .about-headers {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('https://images.unsplash.com/photo-1513828583688-c52646db42da?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header-contents {
+            position: relative;
+            z-index: 2;
+            animation: fadeIn 1.5s ease;
+        }
+
+        .header-contents h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .header-contents p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+
+        /* History Section */
+        .history-section {
+            background: white;
+        }
+
+        .history-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .history-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .history-image {
+            flex: 1;
+            min-width: 300px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transform: translateX(-50px);
+            opacity: 0;
+            transition: all 1s ease;
+        }
+
+        .history-image.animate {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        .history-text h1 {
+            color: var(--primary-color);
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .history-text h2 {
+            font-size: 1.8rem;
+            margin: 2rem 0 1rem;
+            color: var(--secondary);
+            display: flex;
+            align-items: center;
+        }
+
+        .history-text ul {
+            margin: 1.5rem 0;
+            padding-left: 2rem;
+        }
+
+        .history-text li {
+            margin-bottom: 0.8rem;
+        }
+
+        .history-text strong {
+            color: var(--primary-color);
+        }
+
+        /* Features Section */
+        .features {
+            background: #f5f5f5;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            transition: all 0.3s ease;
+            transform: translateY(50px);
+            opacity: 0;
+        }
+
+        .feature-card.animate {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        /* Timeline Section */
+        .timeline-section {
+            padding: 5rem 0;
+            background: white;
+        }
+
+        .timeline-container {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .timeline-container::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background: var(--primary-color);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+            border-radius: 3px;
+        }
+
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            width: 50%;
+            box-sizing: border-box;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .timeline-item.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .timeline-item:nth-child(odd) {
+            left: 0;
+        }
+
+        .timeline-item:nth-child(even) {
+            left: 50%;
+        }
+
+        .timeline-content {
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+            border-left: 4px solid var(--secondary);
+            position: relative;
+        }
+
+        .timeline-content::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: var(--secondary);
+            border-radius: 50%;
+            top: 30px;
+            z-index: 1;
+        }
+
+        .timeline-item:nth-child(odd) .timeline-content::after {
+            right: -10px;
+        }
+
+        .timeline-item:nth-child(even) .timeline-content::after {
+            left: -10px;
+        }
+
+        .timeline-year {
+            font-weight: bold;
+            color: var(--secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .about-header {
+                height: 50vh;
+                background-attachment: scroll;
+            }
+
+            .header-content h1 {
+                font-size: 2rem;
+            }
+
+            .history-content {
+                flex-direction: column;
+            }
+
+            .history-image {
+                order: -1;
+            }
+
+            .timeline-container::after {
+                left: 31px;
+            }
+
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+                left: 0 !important;
+            }
+
+            .timeline-item:nth-child(even) .timeline-content::after,
+            .timeline-item:nth-child(odd) .timeline-content::after {
+                left: -10px;
+                right: auto;
+            }
+        }
+
+        /* Footer Section */
+        .footer {
+            background-color: var(--secondary-color);
+            color: #d9d9d9;
+            position: relative;
+        }
+
+        .footer-top {
+            padding: 70px 0 40px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+        }
+
+        .footer-col {
+            margin-bottom: 30px;
+        }
+
+        .footer-logo img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .footer-about {
+            margin-bottom: 20px;
+            line-height: 1.7;
+            font-size: 0.95rem;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .footer-social a {
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            transition: var(--transition);
+        }
+
+        .footer-social a:hover {
+            background-color: var(--accent-color);
+            transform: translateY(-3px);
+        }
+
+        .footer-title {
+            color: white;
+            font-size: 1.2rem;
+            margin-bottom: 25px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .footer-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 2px;
+            background-color: var(--accent-color);
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: #d9d9d9;
+            text-decoration: none;
+            transition: var(--transition);
+            display: inline-block;
+            position: relative;
+            padding-left: 15px;
+        }
+
+        .footer-links a::before {
+            content: '\f054';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            font-size: 0.7rem;
+            position: absolute;
+            left: 0;
+            top: 6px;
+            color: var(--accent-color);
+            transition: var(--transition);
+            opacity: 0;
+        }
+
+        .footer-links a:hover {
+            color: white;
+            padding-left: 20px;
+        }
+
+        .footer-links a:hover::before {
+            opacity: 1;
+            left: 5px;
+        }
+
+        .footer-contact {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-contact li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            line-height: 1.6;
+        }
+
+        .footer-contact i {
+            color: var(--accent-color);
+            margin-top: 4px;
+            font-size: 1rem;
+        }
+
+        .footer-contact a {
+            color: #d9d9d9;
+            transition: var(--transition);
+            text-decoration: none;
+        }
+
+        .footer-contact a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer-bottom-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        @media (min-width: 768px) {
+            .footer-bottom-content {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+
+        .copyright {
+            font-size: 0.9rem;
+            margin-left: 5rem;
+        }
+
+        .footer-legal {
+            display: flex;
+            gap: 15px;
+            font-size: 0.9rem;
+            margin-right: 5rem;
+        }
+
+        .footer-legal a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: var(--transition);
+            font-weight: 1000;
+        }
+
+        .footer-legal a:hover {
+            color: whitesmoke;
+        }
+
+        /* Back to Top Button */
+        #back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 999;
+        }
+
+        #back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        #back-to-top:hover {
+            background-color: var(--primary-color);
+            transform: translateY(-3px);
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .footer-top {
+                padding: 50px 0 30px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .copyright {
+                margin-right: 5rem;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-legal {
+                flex-direction: column;
+                gap: 5px;
+                margin-left: 5rem;
+            }
+        }
+
+        /* Footer Map Layout */
+        .footer-col-wide {
+            grid-column: span 2;
+        }
+
+        .footer-contact-map {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            height: 100%;
+        }
+
+        .footer-contact-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footer-map {
+            height: 250px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 992px) {
+            .footer-col-wide {
+                grid-column: span 1;
+            }
+
+            .footer-contact-map {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-map {
+                height: 200px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-contact-map {
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="/images/logo.jpg" alt="Jai Hind Vacuum Pump" width="70rem">
+                    </a>
+                </div>
+
+                <nav class="navbar">
+                    <ul class="nav-menu">
+                        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link">Products <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/products/Diaphragm-Vacuum-Pump.html"> Diaphragm Vacuum Pump</a></li>
+                                <li><a href="Belt-Drive-High-Vacuum-Pump.html">Belt Drive High Vacuum Pump</a></li>
+                                <li><a href="Industrial-Vacuum-pumps.html"> Industrial Vacuum Pumps</a></li>
+                                <li><a href="monoblock-vacuum-pump.html"> Monoblock Vacuum Pump</a></li>
+                                <li><a href="Rotary-Vane-Vacuum-Pump.html"> Rotary Vane Vacuum Pump</a></li>
+                                <li><a href="Single-Stage-Oil-Seal-Vacuum-Pump.html"> Single Stage Oil Seal Vacuum
+                                        Pump</a></li>
+                                <li><a href="Single-Stage-Water-Ring-Vacuum-Pump.html">Single Stage Water Ring Vacuum
+                                        Pump</a></li>
+                                <li><a href="Two-Stage-Liquid-Ring-Vacuum-Pump.html">Two Stage Liquid Ring Vacuum
+                                        Pump</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="#industry" class="nav-link">Industries</a></li>
+                        <li class="nav-item"><a href="/about.html" class="nav-link active">About Us</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </nav>
+
+                <div class="header-cta">
+                    <a href="#contact" class="btn primary-btn">Get a Quote</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <header class="about-headers">
+        <div class="header-contents containers">
+            <h1>Powering Industries with Precision Vacuum Solutions</h1>
+            <p>For over two decades, Jai Hind Vacuum Pump has been at the forefront of vacuum technology innovation,
+                serving industries across India with reliable, high-performance solutions.</p>
+        </div>
+    </header>
+
+    <main>
+        <!-- History Section -->
+        <section class="history-section container">
+            <div class="history-content">
+                <div class="history-text">
+                    <h1>Powering Precision, Ensuring Performance – Welcome to Jai-Hind High Vacuum Pumps</h1>
+                    <p>At Jai-Hind High Vacuum Pumps, we don't just supply vacuum pumps—we deliver <strong>trust,
+                            performance, and engineering excellence</strong>. As a leading name in the world of
+                        high-vacuum technology, we specialize in a premium selection of <strong>rotary vane type
+                            vacuum pumps</strong> and <strong>diffusion pumps</strong>, built to meet the
+                        ever-evolving needs of modern industry.</p>
+
+                    <h2>🌀 Precision-Engineered Vacuum Solutions</h2>
+                    <p>Our crown jewels? The <strong>oil-sealed high vacuum pumps</strong>, available in both
+                        <strong>direct drive</strong> and <strong>belt drive</strong> configurations. Whether you're
+                        running a cutting-edge research lab or a high-demand manufacturing line, our pumps are
+                        engineered to deliver <strong>consistent, reliable vacuum performance</strong>—day in, day
+                        out.
+                    </p>
+
+                    <ul>
+                        <li><strong>Direct Drive Pumps:</strong> Known for their high efficiency, lower noise, and
+                            compact design—perfect for clients who demand <em>speed, simplicity, and seamless
+                                performance</em>.</li>
+                        <li><strong>Belt Drive Pumps:</strong> Designed with flexibility in mind, ideal for setups
+                            requiring <em>variable speeds</em> and <em>precise control</em>.</li>
+                    </ul>
+
+                    <h2>🔧 Beyond Products – A Partnership in Performance</h2>
+                    <p>We believe the real relationship begins <em>after</em> the pump is installed. That's why
+                        Jai-Hind High Vacuum Pumps goes the extra mile with <strong>exceptional after-sales
+                            support</strong> that's as reliable as our equipment.</p>
+
+                    <ul>
+                        <li><strong>Annual Maintenance Contracts (AMC):</strong> Our skilled technicians conduct
+                            regular inspections, part replacements, deep cleaning, and performance checks to ensure
+                            your pumps run like new—all year round. <em>Preventive care today means zero downtime
+                                tomorrow.</em></li>
+                        <li><strong>Materializing Plant Services:</strong> Want more out of your vacuum system? Our
+                            experts analyze your plant's layout, processes, and goals, then fine-tune your setup to
+                            eliminate inefficiencies. The result? <strong>Maximum output, minimum energy loss, and
+                                total peace of mind.</strong></li>
+                    </ul>
+
+                    <h2>💼 Serving a Spectrum of Industries</h2>
+                    <p>From <strong>pharmaceuticals</strong> to <strong>R&D labs</strong>,
+                        <strong>electronics</strong> to <strong>heavy manufacturing</strong>, our vacuum pumps power
+                        a wide range of operations across India. With a firm commitment to quality and a deep
+                        understanding of vacuum science, we're not just vendors—we're your <strong>technology
+                            partners</strong>.
+                    </p>
+                    <br>
+                    <p><strong>Choose Jai-Hind High Vacuum Pumps.</strong><br>
+                        <strong>Where performance meets precision.</strong><br>
+                        <strong>And service never takes a backseat.</strong>
+                    </p>
+                </div>
+                <div class="history-image">
+                    <img src="https://images.unsplash.com/photo-1513828583688-c52646db42da?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                        alt="Jai Hind Vacuum Pump manufacturing facility" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="container">
+                <h2 class="section-title">Our Manufacturing Excellence</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🛠️</div>
+                        <h3>Advanced Facility</h3>
+                        <p>25,000 sq.ft plant with modern CNC machines and precision testing equipment for consistent
+                            quality.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3>Quality Certified</h3>
+                        <p>ISO 9001:2015 certified manufacturing processes with rigorous quality control at every stage.
+                        </p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">👨‍🔬</div>
+                        <h3>Expert Team</h3>
+                        <p>50+ skilled professionals with decades of combined experience in vacuum technology.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Section -->
+        <section class="timeline-section">
+            <div class="container">
+                <h2 class="section-title">Our Journey Through The Years</h2>
+                <div class="timeline-container">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-year">1998</div>
+                            <h3>Our Humble Beginnings</h3>
+                            <p>Founded as a small workshop in Mumbai with just 3 employees, serving local pharmaceutical
+                                companies.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-year">2005</div>
+                            <h3>First Major Expansion</h3>
+                            <p>Moved to 10,000 sq.ft facility and introduced CNC machining for precision components.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-year">2012</div>
+                            <h3>ISO Certification</h3>
+                            <p>Achieved ISO 9001 certification, marking our commitment to quality management systems.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-year">2020</div>
+                            <h3>Energy Efficient Series</h3>
+                            <p>Launched our revolutionary EcoVac series with 30% energy savings over conventional pumps.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <!-- Company Info -->
+                    <div class="footer-col">
+                        <div class="footer-logo">
+                            <img src="/images/logo.jpg" alt="Jai Hind Vacuum Pump" width="180">
+                        </div>
+                        <p class="footer-about">Jai Hind Vacuum Pump is a leading manufacturer of industrial vacuum
+                            solutions with over 25 years of experience in the industry.</p>
+                        <div class="footer-social">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="footer-col">
+                        <h3 class="footer-title">Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="industries.html">Industries</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="index.html#contact">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Info with Map -->
+                    <div class="footer-col footer-col-wide">
+                        <div class="footer-contact-map">
+                            <!-- Contact Info -->
+                            <div class="footer-contact-info">
+                                <h3 class="footer-title">Contact Us</h3>
+                                <ul class="footer-contact">
+                                    <li>
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <span>123 Industrial Area, Phase II, Mumbai, Maharashtra 400001</span>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-phone-alt"></i>
+                                        <span>
+                                            <a href="tel:+912212345678">+91 22 1234 5678</a>,
+                                            <a href="tel:+919876543210">+91 98765 43210</a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-envelope"></i>
+                                        <span>
+                                            <a
+                                                href="mailto:info@jaihindvacuumpump.co.in">info@jaihindvacuumpump.co.in</a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-clock"></i>
+                                        <span>Mon-Sat: 9:00 AM - 6:00 PM</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Map -->
+                            <div class="footer-map">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.715314090407!2d72.8382143153846!3d19.03398725872682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce6e593e7c15%3A0x6a7b11f2a0a7a5a5!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
+                                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                    aria-label="Our Location on Google Maps"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <div class="copyright">
+                        &copy; <span id="current-year"></span> Jai Hind Vacuum Pump. All Rights Reserved.
+                    </div>
+                    <div class="footer-legal">
+                        <p> Develped and Managed by <a href="privacy-policy.html">CRYPTIVOXE</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Back to Top Button -->
+        <button id="back-to-top" aria-label="Back to top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </footer>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Mobile Menu Toggle
+            const hamburger = document.querySelector('.hamburger');
+            const navMenu = document.querySelector('.nav-menu');
+
+            hamburger.addEventListener('click', function () {
+                this.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+
+            // Dropdown Menu Toggle for Mobile
+            const dropdowns = document.querySelectorAll('.dropdown');
+
+            dropdowns.forEach(dropdown => {
+                const link = dropdown.querySelector('.nav-link');
+                const menu = dropdown.querySelector('.dropdown-menu');
+
+                link.addEventListener('click', function (e) {
+                    if (window.innerWidth <= 992) {
+                        e.preventDefault();
+                        menu.classList.toggle('active');
+
+                        // Close other dropdowns when one is opened
+                        dropdowns.forEach(otherDropdown => {
+                            if (otherDropdown !== dropdown) {
+                                otherDropdown.querySelector('.dropdown-menu').classList.remove('active');
+                            }
+                        });
+                    }
+                });
+            });
+
+            // Close menu when clicking outside on mobile
+            document.addEventListener('click', function (e) {
+                if (window.innerWidth <= 992) {
+                    if (!e.target.closest('.navbar') && !e.target.closest('.hamburger')) {
+                        navMenu.classList.remove('active');
+                        hamburger.classList.remove('active');
+                        document.querySelectorAll('.dropdown-menu').forEach(menu => {
+                            menu.classList.remove('active');
+                        });
+                    }
+                }
+            });
+
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 100,
+                            behavior: 'smooth'
+                        });
+
+                        // Close mobile menu if open
+                        if (window.innerWidth <= 992) {
+                            navMenu.classList.remove('active');
+                            hamburger.classList.remove('active');
+                        }
+                    }
+                });
+            });
+
+            // Sticky header on scroll
+            const header = document.querySelector('.header');
+            let lastScroll = 0;
+
+            window.addEventListener('scroll', function () {
+                const currentScroll = window.pageYOffset;
+
+                if (currentScroll <= 0) {
+                    header.classList.remove('scroll-up');
+                    return;
+                }
+
+                if (currentScroll > lastScroll && !header.classList.contains('scroll-down')) {
+                    header.classList.remove('scroll-up');
+                    header.classList.add('scroll-down');
+                } else if (currentScroll < lastScroll && header.classList.contains('scroll-down')) {
+                    header.classList.remove('scroll-down');
+                    header.classList.add('scroll-up');
+                }
+
+                lastScroll = currentScroll;
+            });
+
+
+            // Initialize elements as hidden
+            const historyImage = document.querySelector('.history-image');
+            const featureCards = document.querySelectorAll('.feature-card');
+            const timelineItems = document.querySelectorAll('.timeline-item');
+
+            // Animate elements when they come into view
+            const animateOnScroll = function () {
+                // History image
+                const historyPosition = historyImage.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                if (historyPosition < windowHeight - 100) {
+                    historyImage.classList.add('animate');
+                }
+
+                // Feature cards
+                featureCards.forEach((card, index) => {
+                    const cardPosition = card.getBoundingClientRect().top;
+                    if (cardPosition < windowHeight - 100) {
+                        setTimeout(() => {
+                            card.classList.add('animate');
+                        }, index * 200);
+                    }
+                });
+
+                // Timeline items
+                timelineItems.forEach((item, index) => {
+                    const itemPosition = item.getBoundingClientRect().top;
+                    if (itemPosition < windowHeight - 100) {
+                        setTimeout(() => {
+                            item.classList.add('visible');
+                        }, index * 200);
+                    }
+                });
+            };
+
+            // Run on load and scroll
+            window.addEventListener('load', animateOnScroll);
+            window.addEventListener('scroll', animateOnScroll);
+
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            // Map Animation
+            gsap.from('.map-container', {
+                opacity: 0,
+                y: 50,
+                duration: 0.6,
+                scrollTrigger: {
+                    trigger: '.map-container',
+                    start: 'top 80%',
+                    toggleActions: 'play none none none'
+                }
+            });
+
+            // Footer Year Update
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+
+            // Back to Top Button 
+            const backToTopButton = document.getElementById('back-to-top');
+
+            if (backToTopButton) {
+                window.addEventListener('scroll', function () {
+                    if (window.pageYOffset > 300) {
+                        backToTopButton.classList.add('visible');
+                    } else {
+                        backToTopButton.classList.remove('visible');
+                    }
+                });
+
+                backToTopButton.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                });
+            }
+
+            // Footer Animations
+            gsap.utils.toArray('.footer-col').forEach((col, index) => {
+                gsap.from(col, {
+                    opacity: 0,
+                    y: 50,
+                    duration: 0.6,
+                    delay: index * 0.1,
+                    scrollTrigger: {
+                        trigger: '.footer',
+                        start: 'top 80%',
+                        toggleActions: 'play none none none'
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
