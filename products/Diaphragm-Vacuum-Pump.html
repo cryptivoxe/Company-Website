@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diaphragm Vacuum Pump | Jai Hind Vacuum Pumps</title>
+    <meta name="description" content="High-quality diaphragm vacuum pumps for laboratory and industrial applications. Oil-free, maintenance-free operation with excellent chemical resistance.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #0056b3;
+            --secondary: #ff6b00;
+            --dark: #222;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+            --accent: #ff6b00;
+            --white: #fff;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--dark);
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        .header {
+            background-color: var(--white);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 15px 0;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            height: auto;
+            max-width: 100%;
+        }
+
+        /* Product Hero Section */
+        .product-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                        url('https://images.unsplash.com/photo-1631624210939-5c4a39be0107?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Product Overview */
+        .product-overview {
+            padding: 80px 0;
+            background: var(--white);
+        }
+
+        .overview-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .overview-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .overview-image {
+            flex: 1;
+            min-width: 300px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Features Section */
+        .features-section {
+            padding: 80px 0;
+            background: #f5f7fa;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .feature-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        /* Specifications */
+        .specs-section {
+            padding: 80px 0;
+            background: var(--white);
+        }
+
+        .specs-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 30px;
+        }
+
+        .specs-table th, .specs-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+
+        .specs-table th {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .specs-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        /* Applications */
+        .applications-section {
+            padding: 80px 0;
+            background: #f5f7fa;
+        }
+
+        .app-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .app-card {
+            background: var(--white);
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .app-icon {
+            font-size: 1.8rem;
+            color: var(--primary);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 80px 0;
+            text-align: center;
+            background: var(--primary);
+            color: white;
+        }
+
+        .cta-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 30px;
+            transition: var(--transition);
+        }
+
+        .cta-btn:hover {
+            background: #e05a00;
+            transform: translateY(-3px);
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.2rem;
+            }
+            
+            .overview-content {
+                flex-direction: column;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.jpg" alt="Jai Hind Vacuum Pump" width="70">
+                    </a>
+                </div>
+                <nav>
+                    <!-- Navigation would go here (same as your about page) -->
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Product Hero -->
+    <section class="product-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Diaphragm Vacuum Pumps</h1>
+                <p>Oil-free, maintenance-free operation for laboratory and industrial applications</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Overview -->
+    <section class="product-overview">
+        <div class="container">
+            <div class="overview-content">
+                <div class="overview-text">
+                    <h2>About Diaphragm Vacuum Pumps</h2>
+                    <p>Our diaphragm vacuum pumps offer clean, oil-free vacuum solutions for sensitive applications. Designed with advanced technology, these pumps provide reliable performance with minimal maintenance requirements.</p>
+                    <p>The diaphragm design eliminates the need for oil lubrication, making these pumps ideal for applications where contamination must be avoided. With excellent chemical resistance and durable construction, our diaphragm pumps deliver long service life even in demanding environments.</p>
+                    <ul style="margin-top: 20px; padding-left: 20px;">
+                        <li>Oil-free operation</li>
+                        <li>Low maintenance design</li>
+                        <li>Chemical resistant materials</li>
+                        <li>Quiet operation</li>
+                        <li>Energy efficient</li>
+                    </ul>
+                </div>
+                <div class="overview-image">
+                    <img src="https://jaihindvacuumpump.co.in/images/diaphragm-pump.jpg" alt="Diaphragm Vacuum Pump" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="features-section">
+        <div class="container">
+            <h2 style="text-align: center;">Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-oil-can"></i>
+                    </div>
+                    <h3>Oil-Free Operation</h3>
+                    <p>No oil contamination risk, making them ideal for clean applications like laboratories and medical equipment.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Low Maintenance</h3>
+                    <p>Simple design with minimal moving parts reduces maintenance requirements and downtime.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Chemical Resistance</h3>
+                    <p>Constructed with materials resistant to most chemicals and corrosive vapors.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-volume-mute"></i>
+                    </div>
+                    <h3>Quiet Operation</h3>
+                    <p>Significantly quieter than traditional rotary vane pumps, suitable for noise-sensitive environments.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Environmentally Friendly</h3>
+                    <p>No oil changes required and minimal energy consumption for reduced environmental impact.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Long Service Life</h3>
+                    <p>Durable construction and high-quality materials ensure extended operational life.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Specifications -->
+    <section class="specs-section">
+        <div class="container">
+            <h2 style="text-align: center;">Technical Specifications</h2>
+            <table class="specs-table">
+                <thead>
+                    <tr>
+                        <th>Model</th>
+                        <th>Pumping Speed (m³/h)</th>
+                        <th>Ultimate Vacuum (mbar)</th>
+                        <th>Motor Power (kW)</th>
+                        <th>Weight (kg)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>DVP-10</td>
+                        <td>1.0</td>
+                        <td>10</td>
+                        <td>0.12</td>
+                        <td>5.5</td>
+                    </tr>
+                    <tr>
+                        <td>DVP-20</td>
+                        <td>2.0</td>
+                        <td>8</td>
+                        <td>0.25</td>
+                        <td>8.0</td>
+                    </tr>
+                    <tr>
+                        <td>DVP-30</td>
+                        <td>3.0</td>
+                        <td>5</td>
+                        <td>0.37</td>
+                        <td>12.0</td>
+                    </tr>
+                    <tr>
+                        <td>DVP-50</td>
+                        <td>5.0</td>
+                        <td>5</td>
+                        <td>0.55</td>
+                        <td>18.0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Applications -->
+    <section class="applications-section">
+        <div class="container">
+            <h2 style="text-align: center;">Common Applications</h2>
+            <div class="app-grid">
+                <div class="app-card">
+                    <div class="app-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <div>
+                        <h3>Laboratory Use</h3>
+                        <p>For filtration, distillation, and vacuum drying in research labs</p>
+                    </div>
+                </div>
+                <div class="app-card">
+                    <div class="app-icon">
+                        <i class="fas fa-medkit"></i>
+                    </div>
+                    <div>
+                        <h3>Medical Equipment</h3>
+                        <p>Used in dental suction, medical analyzers, and diagnostic machines</p>
+                    </div>
+                </div>
+                <div class="app-card">
+                    <div class="app-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <div>
+                        <h3>Industrial Processes</h3>
+                        <p>For packaging, degassing, and material handling applications</p>
+                    </div>
+                </div>
+                <div class="app-card">
+                    <div class="app-icon">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <div>
+                        <h3>Analytical Instruments</h3>
+                        <p>Supporting mass spectrometers, electron microscopes, and other sensitive equipment</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Find the Perfect Diaphragm Pump?</h2>
+                <p>Our experts can help you select the right model for your specific application requirements.</p>
+                <a href="contact.html" class="cta-btn">Request a Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Footer would go here (same as your about page) -->
+    </footer>
+
+    <script>
+        // JavaScript would go here (same as your about page)
+    </script>
+</body>
+</html>

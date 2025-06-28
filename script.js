@@ -139,29 +139,29 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Client logos animation
         gsap.utils.toArray('.logo-item').forEach((item, index) => {
-                // Set initial state
-                gsap.set(item, {
-                    y: 20,
-                    opacity: 0,
-                    visibility: 'hidden'
-                });
-
-                // Animate to final state
-                gsap.to(item, {
-                    duration: 0.8,
-                    y: 0,
-                    opacity: 0.7,
-                    visibility: 'visible',
-                    delay: 0.5 + (index * 0.1),
-                    ease: 'power2.out',
-                    onStart: () => {
-                        item.style.willChange = 'transform, opacity';
-                    },
-                    onComplete: () => {
-                        item.style.willChange = 'auto';
-                    }
-                });
+            // Set initial state
+            gsap.set(item, {
+                y: 20,
+                opacity: 0,
+                visibility: 'hidden'
             });
+
+            // Animate to final state
+            gsap.to(item, {
+                duration: 0.8,
+                y: 0,
+                opacity: 0.7,
+                visibility: 'visible',
+                delay: 0.5 + (index * 0.1),
+                ease: 'power2.out',
+                onStart: () => {
+                    item.style.willChange = 'transform, opacity';
+                },
+                onComplete: () => {
+                    item.style.willChange = 'auto';
+                }
+            });
+        });
 
         // Floating pump animation
         const pumpImage = document.querySelector('.pump-image');
@@ -371,17 +371,40 @@ document.addEventListener('DOMContentLoaded', function () {
     // Footer Year Update
     document.getElementById('current-year').textContent = new Date().getFullYear();
 
-    // Back to Top Button
+
+    
+    const whatsappButton = document.getElementById('whatsapp-button');
+    const callButton = document.getElementById('call-button');
     const backToTopButton = document.getElementById('back-to-top');
-    window.addEventListener('scroll', function () {
-        backToTopButton.classList.toggle('visible', window.pageYOffset > 300);
+    
+    // Show/hide buttons on scroll
+    window.addEventListener('scroll', function() {
+        const isScrolled = window.pageYOffset > 300;
+        
+        if (whatsappButton) whatsappButton.classList.toggle('visible', isScrolled);
+        if (callButton) callButton.classList.toggle('visible', isScrolled);
+        if (backToTopButton) backToTopButton.classList.toggle('visible', isScrolled);
     });
-    backToTopButton.addEventListener('click', function () {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
+    
+    // Back to top functionality
+    if (backToTopButton) {
+        backToTopButton.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
         });
-    });
+    }
+    
+    // Initialize visibility if already scrolled
+    if (window.pageYOffset > 300) {
+        if (whatsappButton) whatsappButton.classList.add('visible');
+        if (callButton) callButton.classList.add('visible');
+        if (backToTopButton) backToTopButton.classList.add('visible');
+    }
+
+
+
 
     // Footer Animations
     gsap.utils.toArray('.footer-col').forEach((col, index) => {
